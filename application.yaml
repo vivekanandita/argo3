@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-world
+  name: argo3
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/vivekanandita/argo2
+    repoURL: https://github.com/vivekanandita/argo3
     targetRevision: master
     path: manifests
   destination:
